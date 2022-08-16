@@ -1,10 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
 .nav-item {
   font-size: 14px;
   padding-left: 13px;
   padding-right: 13px;
 }
 
-/* Section A */
+.right_arrow {
+  border: solid blue;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 7px;
+  margin-bottom: 2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+#playGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 15px;
+  align-content: stretch;
+}
+#playGrid section {
+  position: relative;
+  height: 90vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section {
   position: relative;
   height: 90vh;
@@ -12,6 +49,77 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+footer {
+  position: relative;
+  padding: 55px 0;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* Section bottom */
+.section-bottom {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-bottom h4 {
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  bottom: 0px;
+}
+.section-bottom a {
+  font-size: 20px;
+  margin-left: 30px;
+  border: none;
+  color: white;
+  display: inline-block;
+}
+.section-bottom .right_arrow {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 7px;
+  margin-bottom: 2px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/* Section Header */
+.section-head {
+  position: relative;
+  top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.section-head h2 {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.section-head h4 {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.section-head a {
+  font-size: 23px;
+  margin-left: 30px;
+  border: none;
+  color: blue;
+  display: inline-block;
+}
+
+/* Section A */
 .section-a {
   background-image: url('../img/macbook_air.png');
 }
@@ -27,12 +135,17 @@ section {
   font-weight: 600;
   margin-bottom: 5px;
 }
+
+.section-inner h4 {
+  font-size: 55px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
 .section-inner a {
   font-size: 23px;
-  margin-left: 45px;
+  margin-left: 30px;
   border: none;
   color: blue;
-  background-color: white;
   display: inline-block;
 }
 .section-inner img {
@@ -43,17 +156,64 @@ section {
   width: 45%;
 }
 
-.right_arrow {
-  border: solid blue;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-left: 7px;
-  margin-bottom: 2px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-}
-
+/* Section B */
 .section-b {
   background-image: url('../img/iphone_13.jpg');
+}
+
+/* Section C */
+.section-c {
+  background-image: url('../img/mixed.jpg');
+}
+
+/* Section D */
+.section-d {
+  background-image: url('../img/iphone_13_pro.jpg');
+}
+/* Section E */
+.section-e {
+  background-image: url('../img/macbook_pro_13.jpg');
+}
+.section-e img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+/* Section F */
+.section-f {
+  background-image: url('../img/apple_watch.jpg');
+}
+/* Section G */
+.section-g {
+  background-image: url('../img/ipad_air.jpg');
+}
+/* Section H */
+.section-h {
+  background-image: url('../img/apple_music.jpg');
+}
+.section-h .section-bottom {
+  top: 520px;
+}
+.section-h img {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section I */
+.section-i {
+  background-image: url('../img/blackbird.jpg');
+}
+.section-i .section-bottom {
+  top: 380px;
+}
+#apple_tv_logo {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
