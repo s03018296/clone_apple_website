@@ -60,6 +60,19 @@ footer ul {
   align-items: center;
   flex-wrap: wrap;
 }
+
+/* Unicef Banner*/
+.unicef-banner {
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+  background-color: black;
+}
+.unicef-banner a {
+  margin-left: 10px;
+  border: none;
+  display: inline-block;
+}
 /* Section bottom */
 .section-bottom {
   position: relative;
